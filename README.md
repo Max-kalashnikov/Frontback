@@ -2,4 +2,4 @@
 ## Проект
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://github.com/Max-kalashnikov/Frontback)
+- [Публичная страница на GitHub Pages](https://max-kalashnikov.github.io/Frontback/)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== CSS ПЕРЕМЕННЫЕ (Дизайн-токены) ===== */
 :root {
     /* Цвета */
@@ -322,3 +323,143 @@ body {
         padding: var(--space-5) 0;
     }
 }
+=======
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+body { 
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; 
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.feedback-btn {
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-btn:hover {
+    filter: brightness(0.95);
+}
+
+label { 
+    display: block; 
+    margin: 0.5rem 0 0.25rem; 
+    font-weight: 500;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    max-width: 480px;
+    padding: .5rem .75rem;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button, [type="submit"] {
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+}
+
+:where(input, select, textarea, button):focus-visible {
+    outline: 2px solid #0a84ff; 
+    outline-offset: 2px;
+}
+
+button:hover { 
+    filter: brightness(0.95); 
+}
+
+:disabled, [aria-disabled="true"] { 
+    opacity: .6; 
+    cursor: not-allowed; 
+}
+
+
+[aria-invalid="true"] { 
+    border-color: #b00020; 
+}
+
+
+dialog { 
+    padding: 1.5rem; 
+    border: none; 
+    border-radius: 12px; 
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog::backdrop { 
+    background: rgba(0,0,0,.5); 
+}
+
+.form-actions { 
+    display: flex; 
+    gap: .5rem; 
+    margin-top: 1.5rem; 
+}
+
+
+small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+>>>>>>> d3f648322ebc40f9b143184dbf5e036046b6d406

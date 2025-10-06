@@ -1,4 +1,4 @@
-// Модальное окно (из Практики 3)
+
 const dlg = document.getElementById('contactDialog');
 const openBtn = document.getElementById('openDialog');
 const closeBtn = document.getElementById('closeDialog');
@@ -19,7 +19,6 @@ closeBtn?.addEventListener('click', () => {
 form?.addEventListener('submit', (event) => {
     event.preventDefault();
     
-    // Сброс ошибок
     const allInputs = [...form.elements];
     allInputs.forEach(input => {
         if (input.setCustomValidity) {
@@ -28,7 +27,6 @@ form?.addEventListener('submit', (event) => {
         input.removeAttribute('aria-invalid');
     });
 
-    // Валидация
     if (!form.checkValidity()) {
         form.reportValidity();
         allInputs.forEach(input => {
@@ -39,7 +37,6 @@ form?.addEventListener('submit', (event) => {
         return;
     }
 
-    // Успешная отправка
     alert('Сообщение отправлено!');
     form.reset();
     dlg.close('success');
@@ -49,7 +46,6 @@ dlg?.addEventListener('close', () => {
     lastActiveElement?.focus();
 });
 
-// Плавная прокрутка для якорных ссылок
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <meta charset="UTF-8">
-<meta name="description">
- <title>О нас</title>
- <meta name="description" content="Краткое описание главной страницы вашего сайта">
- <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
- <title>О нас - Название вашего сайта</title>
- <meta name="description" content="Узнайте больше о нашей компании и истории">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты – Frontback</title>
+  <meta name="description" content="Свяжитесь с нами: телефон, email, форма обратной связи.">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
- <header>
- <a href="/">Frontback</a>
- <!-- Главное меню навигации -->
- <nav>
- <ul>
- <li><a href="index.html">Главная</a></li>
- <li><a href="about.html">О нас</a></li>
- <li><a href="contacts.html">Контакты</a></li>
- </ul>
- </nav>
- </header>
- <main>
-    <h1>Контакты</h1>
-    <section>
-        <h2>Телефон</h2>
-        <p>+7111111111</p>
-        <h2>Email</h2>
-        <p>0000000000@gmail.com</p>
+  <header class="header">
+    <a class="header__brand" href="/">Frontback</a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--active" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section contact">
+      <h1 class="section__title">Контакты</h1>
+
+      <div class="contact__info">
+        <p><strong>Телефон:</strong> +7 (111) 111-11-11</p>
+        <p><strong>Email:</strong> <a href="mailto:0000000000@gmail.com">0000000000@gmail.com</a></p>
+      </div>
+
+      <a href="#contactDialog" class="button write-us">Написать нам</a>
     </section>
- </main>
- <footer>
- <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
- <p>Телефон: +7 (123) 456-78-90</p>
- </footer>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Frontback. Все права защищены.</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </footer>
 </body>
 </html>

@@ -58,3 +58,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.querySelector(".write-us");
+  const dialog = document.getElementById("contactDialog");
+  const closeBtn = document.getElementById("closeDialog");
+
+  if (openBtn && dialog && closeBtn) {
+    openBtn.addEventListener("click", (event) => {
+      event.preventDefault(); 
+      dialog.showModal(); 
+    });
+
+    closeBtn.addEventListener("click", () => {
+      dialog.close();
+    });
+
+    dialog.addEventListener("click", (e) => {
+      const dialogRect = dialog.querySelector(".modal__content");
+      if (!dialogRect.contains(e.target)) {
+        dialog.close();
+      }
+    });
+  }
+});
